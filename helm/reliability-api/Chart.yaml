@@ -1,0 +1,6 @@
+apiVersion: v2
+name: reliability-api
+description: Helm chart for deploying the reliability-api demo service
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
