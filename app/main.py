@@ -48,7 +48,7 @@ def index():
 @app.route("/healthz")
 def healthz():
     """Liveness probe: is the process itself alive?"""
-    return jsonify({"status": "ok"}), 200
+    return jsonify({"status": "alive"}), 200
 
 
 @app.route("/readyz")
