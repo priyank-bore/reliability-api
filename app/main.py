@@ -75,6 +75,9 @@ def toggle_ready():
     _READY_STATE["ok"] = not _READY_STATE["ok"]
     return jsonify(_READY_STATE)
 
+@app.route("/version")
+def version():
+    return jsonify({"version": app_version})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
